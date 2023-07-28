@@ -1,4 +1,5 @@
-SELECT e.Code AS FirstCode
+SELECT 
+	e.Code AS FirstCode
 	,v.DateBegin AS FirstDateBegin
 	,v.DateEnd AS FirstDateEnd
 	,e_map.Code AS SecondCode
