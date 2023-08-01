@@ -6,7 +6,7 @@ SELECT
 	,v_map.DateBegin AS SecondDateBegin
 	,v_map.DateEnd AS SecondDateEnd
 FROM dbo.Vacation AS v
-	CROSS  JOIN dbo.Vacation AS v_map
+	CROSS JOIN dbo.Vacation AS v_map
 	INNER JOIN dbo.Employee AS e ON e.ID = v.Id_Employee
 	INNER JOIN dbo.Employee AS e_map ON e_map.ID = v_map.Id_Employee
 WHERE v.ID_Employee > v_map.ID_Employee 
